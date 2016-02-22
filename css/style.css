@@ -1,0 +1,313 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+	background-color: #f0f8ff;
+	/*background: -webkit-linear-gradient(0deg, #71c0e7, #008fd5);*/
+}
+
+a {
+	text-decoration: none;
+	-webkit-transition: all .5s;
+  	-moz-transition: all .5s;
+  	-o-transition: all .5s;
+  	transition: all .5s;
+	color: #3a3a3a;
+}
+
+a:hover {
+	color: #008fd5;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+	height: auto;
+	margin: 0 auto;
+}
+
+ul li {
+	list-style: none;
+}
+
+p {
+	color: #3a3a3a;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.main-header .student-name {
+	margin: 0px 0px 15px 0px;
+}
+
+.student-name a,
+.main-nav a,
+.main-footer .footer-nav a {
+	text-align: center;
+	display: block;
+}
+
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	margin-bottom: 50px;
+}
+
+.main-nav,
+.footer-nav {
+	padding-left: 0px;
+	margin-top: 5px;
+}
+
+.main-nav li a,
+.main-footer .footer-nav li a {
+	padding: 10px;
+	background-color: #fff;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.about-student p {
+	margin-top: 45px;
+	font-size: 1.2em;
+}
+
+.col {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.portfolio .container {
+	background-color: #fff;
+	-webkit-box-shadow: 0px 5px 6px -5px #bdbdbd;
+  	-moz-box-shadow: 0px 5px 6px -5px #bdbdbd;
+  	box-shadow: 0px 5px 6px -5px #bdbdbd;
+}
+
+.portfolio {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.portfolio img {
+	-webkit-transition: all .5s;
+  	-moz-transition: all .5s;
+  	-o-transition: all .5s;
+  	transition: all .5s;
+}
+
+.portfolio img:hover {
+	-webkit-transform: scale(1) rotate(2deg);
+	-moz-transform: scale(1) rotate(2deg);
+	-ms-transform: scale(1) rotate(2deg);
+	-o-transform: scale(1) rotate(2deg);
+	transform: scale(1) rotate(2deg);
+}
+
+.portfolio h3,
+.main-contact h3 {
+	text-transform: uppercase;
+}
+
+.portfolio h4 {
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+
+.portfolio h3 {
+	text-align: center;
+	margin: 0px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+} 
+
+.portfolio p {
+	font-weight: normal;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.main-contact {
+	text-align: center;
+	margin-bottom: 70px;
+}
+
+.main-contact.page {
+	margin-bottom: 0px;
+}
+
+.main-contact p {
+	font-size: 1.2em;
+}
+
+.main-contact .fa {
+	margin-right: 5px;
+}
+
+.main-contact p:nth-of-type(1) {
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+.main-footer .student-name {
+	float: left;
+	font-size: 1.3em;
+}
+
+.main-footer .container {
+	border-top: 1px solid #e7e7e7;
+}
+
+.main-footer .footer-nav {
+	display: none;
+}
+
+.main-footer .back-top {
+	float: right;
+	text-transform: uppercase;
+	font-size: 1.3em;
+}
+
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+.wrap {
+	min-height: calc(100vh - 95px);
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+	.container {
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+
+	.main-header .student-name {
+		margin: 0px;
+	}
+
+	.main-footer .student-name {
+		float: left;
+	}
+
+	.main-header {
+		margin-bottom: 0px;
+	}
+
+	.main-footer .footer-nav {
+		float: right;
+	}
+
+	.main-nav {
+		text-align: center;
+	}
+
+	.main-nav li {
+		display: inline-block;
+	}
+	
+	.main-footer .footer-nav li {
+		float: left;
+		margin-left: 15px;
+	}
+
+	.main-nav li a,
+	.student-name a,
+	.main-footer .footer-nav li a {
+		padding: 20px 10px;
+		background-color: #f0f8ff;
+	}
+
+	.main-footer .footer-nav {
+		display: block;
+		margin-bottom: 0px;
+	}
+
+	.main-footer .student-name {
+		margin: 0px;
+	}
+
+	/*.main-footer .student-name {
+		float: none;
+	}*/
+
+	.main-footer .back-top {
+		display: none;
+	}
+
+	.portfolio h3 {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.about-student p {
+		margin-top: 0px;
+	}
+
+	/* ---- Columns ---- */
+
+	.about-student .primary.col {
+		width: 60%;
+		float: left;
+	}
+
+	.about-student .secondary.col {
+		width: 40%;
+		float: right;
+	}
+
+	.portfolio .col {
+		width: 50%;
+		float: left;
+	}
+
+}
+
+@media (min-width: 992px) {
+
+	/* ---- Columns ---- */
+
+	.portfolio .col {
+		width: 33.3333333%;
+		float: left;
+	}
+
+	.main-nav {
+		float: right;
+	}
+
+	.student-name {
+		float: left;
+	}
+
+	.main-nav li {
+		float: left;
+		margin-left: 15px; 
+	}
+}
